@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#0d0a17;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:500px;
+    padding:40px;
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    box-shadow:0 0 30px #ff1493;
+}
+
+h1{
+    color:white;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+h2{
+    color:#ff69b4;
+}
+
+h3{
+    color:white;
+    margin:30px 0;
+}
+
+p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff1493;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#nextBtn{
+    display:none;
+}
+#nextBtn{
+    margin-top:20px;
+    display:none;
+}
+
+#question{
+    color:white;
+    margin:30px 0;
+}
+
+#result{
+    color:#ff69b4;
+    margin-top:20px;
+    font-size:20px;
+}
+
+.or-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:15px 0;
+}
+
+.or-line::before,
+.or-line::after{
+    content:'';
+    width:120px;
+    height:2px;
+    background:#ff1493;
+}
+
+.or-line span{
+    margin:0 15px;
+    color:white;
+    font-size:18px;
+}

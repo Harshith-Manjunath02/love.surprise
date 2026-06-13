@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#0d0a17;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+.container{
+    text-align:center;
+}
+
+.line{
+    opacity:0;
+    transform:translateY(30px);
+    color:white;
+    margin:20px 0;
+    text-shadow:0 0 20px #ff1493;
+}
+
+h1{
+    font-size:50px;
+    color:#ff1493;
+}
+
+h2{
+    font-size:30px;
+}
+.petal{
+    position:absolute;
+    top:-50px;
+    font-size:25px;
+    opacity:.8;
+
+    animation:fall linear forwards;
+}
+@keyframes fall{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+    }
+
+    to{
+        transform:translateY(110vh) rotate(360deg);
+    }
+
+}
